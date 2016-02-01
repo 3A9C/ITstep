@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="MobileOptimized" content="320"/>
+
+	<!--[if lt IE 9.]>
+		     <script type="text/javascript" src="https://content.kufar.by/js/html5shiv.min.js?115551"></script> 
+	<![endif]-->
+	
+	
+	
+	
+	
+	
+	<title>Вход в личный кабинет</title>
+	<!-- CSS INCLUDES: -->
+	             <link href="https://content.kufar.by/css/common_by.css?115551" rel="stylesheet" type="text/css"  />         <link href="https://content.kufar.by/css/mypages_by.css?115551" rel="stylesheet" type="text/css"  />   
+    <style type="text/css">
+        @font-face {
+            font-family: 'Veles';
+            src: url('https://content.kufar.by/fonts/Veles-Regular-webfont.otf?115551') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Icons';
+            src: url('https://content.kufar.by/fonts/Icons-Regular-webfont.eot?115551');
+            src: url('https://content.kufar.by/fonts/Icons-Regular-webfont.eot?115551?#iefix') format('embedded-opentype'),
+            url('https://content.kufar.by/fonts/Icons-Regular-webfont.woff?115551') format('woff'),
+            url('https://content.kufar.by/fonts/Icons-Regular-webfont.ttf?115551') format('truetype'),
+            url('https://content.kufar.by/fonts/Icons-Regular-webfont.svg?115551#robotolight') format('svg');
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+	<!-- https-->
+	
+
+	<!-- HEADEXTRAS: -->
+	
+	
+	<link rel="icon" href="https://content.kufar.by/img/favicon.ico?115551" type="image/x-icon" />
+	<link rel="shortcut icon" href="https://content.kufar.by/img/favicon.ico?115551" type="image/x-icon" />
+	<link rel="icon" href="https://content.kufar.by/img/favicon.png?115551" type="image/png" />
+	<link rel="shortcut icon" href="https://content.kufar.by/img/favicon.png?115551" type="image/png" />
+	<link rel="apple-touch-icon" href="https://content.kufar.by/img/favicon_ios.png?115551" type="image/png" />
+
+
+	
+
+		<link href="https://plus.google.com/117119359135141147338" rel="publisher" />
+
+	<!-- JAVASCRIPTS: -->
+	
+    
+		<script type="text/javascript">
+		<!--//--><![CDATA[//><!--
+		var pp_gemius_identifier = new String('..uQcn.R208MUylQIEdaTpYTHbEdh3uexcex64KWdWj.T7');
+		var pp_gemius_hitcollector = 'gaby.hit.gemius.pl';
+		//--><!]]></script>
+	
+                     <script type="text/javascript" src="https://content.kufar.by/js/general.min.js?115551"></script>           <script type="text/javascript" src="https://content.kufar.by/js/mypages.min.js?115551"></script>    <script type="text/javascript" src="https://content.kufar.by/js/arrays_v2.js?country=BY&language=ru&version=115551"></script>         <script type="text/javascript" src="https://content.kufar.by/js/events.min.js?115551"></script>           <script type="text/javascript" src="https://content.kufar.by/js/xgemius.min.js?115551"></script>           <script type="text/javascript" src="https://content.kufar.by/js/category_dropdown.min.js?115551"></script>           <script type="text/javascript" src="https://content.kufar.by/js/jquery.iframe-transport.min.js?115551"></script>           <script type="text/javascript" src="https://content.kufar.by/js/jquery.fileupload.min.js?115551"></script>    
+
+    
+        
+                
+<script type="text/javascript">
+(function (e, t) { if (!t.__SV) { window.calq = t; var n = e.createElement("script"); n.type = "text/javascript"; n.src = 'https://content.kufar.by/js/calq-1.0.min.js?115551'; n.async = !0; var r = e.getElementsByTagName("script")[0]; r.parentNode.insertBefore(n, r); t.init = function (e, o) { t.writeKey = e; t._initOptions = o; t._execQueue = []; m = "action.track action.trackSale action.trackHTMLLink action.setGlobalProperty user.profile user.identify user.clear".split(" "); for (var n = 0; n < m.length; n++) { var f = function () { var r = m[n]; var s = function () { t._execQueue.push({ m: r, args: arguments }) }; var i = r.split("."); if (i.length == 2) { if (!t[i[0]]) { t[i[0]] = [] } t[i[0]][i[1]] = s } else { t[r] = s } }(); } }; t.__SV = 1 } })(document, window.calq || []);
+calq.init("0a121a1afcf5721017490a1ff7e40da7");
+window.calq_loaded = true;
+if (typeof(get_calq_property)!='undefined'){
+    get_calq_property();
+}
+</script>
+
+
+                <script type="text/javascript">
+                
+                </script>
+        
+    <script type="text/javascript">
+        var cookie_domain = ".kufar.by";
+        
+    </script>
+
+    
+        
+            
+            
+            
+            
+
+            <script type='text/javascript'>
+                var googletag = googletag || {};
+                googletag.cmd = googletag.cmd || [];
+                (function() {
+                    var gads = document.createElement('script');
+                    gads.async = true;
+                    gads.type = 'text/javascript';
+                    var useSSL = 'https:' == document.location.protocol;
+                    gads.src = (useSSL ? 'https:' : 'http:') +
+                    '//www.googletagservices.com/tag/js/gpt.js';
+                    var node = document.getElementsByTagName('script')[0];
+                    node.parentNode.insertBefore(gads, node);
+                })();
+            </script>
+
+            
+            <script type="text/javascript">
+                googletag.cmd.push(function() {
+                    var mapping_top = googletag.sizeMapping().addSize([2560, 0], [2560, 120]).addSize([2048, 0], [2048, 120]).addSize([1920, 0], [1920, 120]).addSize([1680, 0], [1680, 120]).addSize([1600, 0], [1600, 120]).addSize([1440, 0], [1440, 120]).addSize([1400, 0], [1400, 120]).addSize([1366, 0], [1366, 120]).addSize([1280, 0], [1280, 120]).addSize([1152, 0], [1152, 120]).addSize([1024, 0], [1024, 120]).addSize([0, 0], [1017, 120]).build(),
+                        mapping_ad = googletag.sizeMapping().addSize([1600, 0], [737, 110]).addSize([0, 0], [482, 110]).build(),
+                        mapping_timer;
+
+                    window.banner_top = googletag.defineSlot('/133764788/Kufar.by-Leaderboard', [[1152, 120], [1366, 120], [2560, 120], [1920, 120], [1280, 120], [1680, 120], [980, 120], [1024, 120], [1440, 120], [800, 120], [2048, 120], [728, 90], [1400, 120], [1600, 120]], 'div-gpt-ad-1443533592016-0').defineSizeMapping(mapping_top).setCollapseEmptyDiv(true,true).addService(googletag.pubads());
+                    
+                    
+                    
+                    
+                    
+                    
+                    googletag.pubads().setTargeting('Category', '0');
+                    googletag.pubads().setTargeting('Region', '');
+                    googletag.pubads().enableSingleRequest();
+                    googletag.pubads().collapseEmptyDivs();
+                    googletag.enableServices();
+
+                    function mapping_resizer() {
+                        googletag.pubads().refresh([window.banner_top, window.banner_ad]);
+                    }
+
+                    window.addEventListener("resize", function() {
+                        clearTimeout(mapping_timer);
+                        mapping_timer = setTimeout(mapping_resizer, 250);
+                    });
+                });
+            </script>
+        
+    
+
+    
+
+    
+
+    
+    <meta name="google-site-verification" content="QJja_qCJyiXjzzppPIU7LjXIJCTxa_GIY2sT3BO5ehY" />
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;
+            n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window, document,'script','//connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '935908496427242');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=935908496427242&ev=PageView&noscript=1"/></noscript>
+    <!-- End Facebook Pixel Code -->
+    
+    <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=JrN8rc2culnr4/bOGodPA0zGFuO/gZtCSptGlp3Yxteh3rLXm8sgCIAdXnmUkX*A0hB3nprwhxJ5YLZkuOSmO1MBPCEH/EQtM0xsbUB/7KQlMNqv0FOl3LDUYSo4cpJKgVy34mmHlbZr2AJwXohocn2Pct6w8BWi4pCGEuNhk9g-';</script>
+</head>
+<!--[if IE 6 ]> <body itemscope itemtype="http://schema.org/WebPage" name="body" class=" ie ie6 not-ie7 not-ie8 not-ie9 "> <![endif]--><!--[if IE 7 ]> <body itemscope itemtype="http://schema.org/WebPage" name="body" class=" ie ie7 not-ie6 not-ie8 not-ie9 "> <![endif]--><!--[if IE 8 ]> <body itemscope itemtype="http://schema.org/WebPage" name="body" class=" ie ie8 not-ie6 not-ie7 not-ie9 "> <![endif]--><!--[if IE 9 ]> <body itemscope itemtype="http://schema.org/WebPage" name="body" class=" ie ie9 not-ie6 not-ie7 not-ie8 "> <![endif]-->
+<!--[if !IE]>--><body itemscope itemtype="http://schema.org/WebPage" name="body" class=" not-ie6 not-ie7 not-ie8 not-ie9  not-ie "><!--<![endif]-->
+<div class="wrapper">
+
+    
+
+<header class="header">
+
+    
+
+<div class="cookie cookie_type_active">
+    <div class="cookie__holder">
+        <i class="cookie__logo sprite_common_by_cookie"></i>
+        <div class="cookie__content">
+            <b class="cookie__label">Cookies</b>
+            <p class="cookie__info">Kufar использует файлы cookies. Пользуясь данным ресурсом, вы соглашаетесь на установку этих файлов на вашем устройстве.</p>
+            <p class="cookie__info">Файлы cookies нужны, чтобы мы могли запоминать выбранные вами параметры и настройки. Мы используем следующие виды cookies: аналитические, социальных сетей, партнеров, cookies рекламы и поведения, технические и рабочие.</p>
+            
+            <a class="cookie__close" href="#">ОК</a>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(function() {
+        var warningControllerInit = new WarningController();
+        warningControllerInit.init('cookie', 'ck');
+    });
+</script>
+
+    
+
+    <div class="header__holder">
+        <a class="header__logo" href="https://www.kufar.by"></a>
+
+        <form class="header__form" method="get" id="header_form" action="https://www.kufar.by/беларусь/">
+            <input class="form_text form_text_type_find" id="header_search" type="text" name="q" placeholder="Введите слова для поиска, напр., коляска, мотоцикл...">
+            <input class="header__find sprite_common_by_header_find" type="submit" value="">
+        </form>
+
+        
+
+        
+            <div class="header__switcher">
+                
+                        <span class="header__option header__option_type_active">Рус</span>
+                    <a class="header__option" href="javascript:setCookie('lang', 'by', 0, '/', '.kufar.by'); location.reload();">Бел</a>
+                    
+                
+            </div>
+        
+
+        <a class="header__office sprite_common_by_header_office" href="https://www.kufar.by/account/login"></a>
+
+        <a class="header__button" href="https://www2.kufar.by/ai">
+            Подать объявление
+            <i class="header__add sprite_common_by_header_add"></i>
+        </a>
+
+        <div class="popup popup_type_account">
+    <i class="popup__arrow sprite_common_by_popup_arrow"></i>
+    
+
+    
+        <div class="popup_login">
+    <a class="popup_login__link" href="https://www.kufar.by/Мои_объявления.htm">
+        <i class="popup_login__icon popup_login__icon_type_email sprite_common_by_popup_login_email"></i>
+        Получить список моих объявлений на e-mail
+    </a>
+    <div class="popup_login__holder">
+        <i class="popup_login__icon popup_login__icon_type_photo sprite_common_by_popup_login_photo"></i>
+        <b class="popup_login__enter">Войти в личный кабинет</b>
+        <form class="form_login" action="https://www.kufar.by/account/do_login" method="post">
+
+    <fieldset class="form_fieldset form_fieldset_type_login">
+        <label class="form_label form_label_type_login">E-mail</label>
+        <input class="form_text form_text_type_login" name="email" type="text" id="email" maxlength="$(mypages.account.email.max_length)" value="" />
+        <label class="form_label form_label_type_login">Пароль</label>
+        <input class="form_text form_text_type_login" name="passwd" type="password" id="passwd" maxlength="$(mypages.password.max_length)" autocomplete="off" />
+        <label class="form_label form_label_type_remember">
+            <input class="form_checkbox form_checkbox_type_login" name="remember" id="remember" value="1"  type="checkbox" /><b class="form_badge">Запомнить меня</b>
+        </label>
+    </fieldset>
+
+    <div class="form_login__nav">
+        <input class="form_button form_button_style_green form_button_size_small form_button_type_input form_button_type_login" name="login" type="submit" id="login" value="Войти" />
+        <a class="form_button form_button_style_green form_button_size_small form_button_type_login" href="https://www.kufar.by/account/create">Регистрация</a>
+    </div>
+
+    <a class="form_login__forgot" href="https://www.kufar.by/account/recovery">Забыли пароль?</a>
+</form>
+    </div>
+</div>
+
+        
+    
+</div>
+
+<div class="popup__overlay popup__overlay_type_account"></div>
+
+<script type="text/javascript">
+    $(function() {
+        var popupAccountInit = new PopupController();
+        popupAccountInit.init('header__office', 'account');
+    });
+</script>
+
+    </div>
+</header>
+
+<script type="text/javascript">
+    $(function() {
+        var preSearchController = new PreSearchController();
+        preSearchController.init();
+    });
+</script>
+
+
+    
+        
+                
+                
+                        
+                        
+                        
+
+                        
+                                    
+                            
+                                    
+                            
+                                    
+                            
+                                    
+                            
+                                    
+                            
+                                    
+                            
+                                    
+                            
+                                    
+                            
+                                    
+                            
+                                    
+                            
+                                    
+                            
+                                    
+                            
+                                    
+                            
+                                    
+                            
+                                    
+                            
+                                    
+                            
+                        
+                        
+                                
+                                
+                                
+                                        
+                                                
+                                        
+                                
+                                        
+                                
+                                        
+                                
+                                        
+                                
+                                        
+                                
+                                        
+                                
+                                        
+                                
+                                        
+                                
+                                        
+                                
+                                        
+                                
+                                        
+                                
+                                        
+                                
+                                        
+                                
+                                        
+                                
+                                        
+                                
+                                        
+                                
+                                
+                                
+
+                                
+                                        
+                                        
+                                
+                                        
+                                        
+                                
+                                        
+                                        
+                                
+                                        
+                                        
+                                
+                                        
+                                        
+                                
+                                        
+                                        
+                                
+                                        
+                                        
+                                
+                                        
+                                        
+                                
+                                        
+                                        
+                                
+                                
+                                        <div id="poll_box">
+                                                <div class="subject">
+                                                    <span onclick="window.poll.close(jQuery('#poll_question_id').val())" class="poll_close sprite_common_by_icn_close"></span>
+                                                    <span>Мы так рады, что вы здесь! :) </span>
+                                                </div>
+                                                <div class="title">Как часто вы посещаете Куфар?</div>
+                                                <div class="radio">
+                                                        
+                                                              <label><input type="radio" name="poll" value="0">Каждый день</label><br>
+                                                        
+                                                              <label><input type="radio" name="poll" value="1">Несколько раз в неделю</label><br>
+                                                        
+                                                              <label><input type="radio" name="poll" value="2">Несколько раз в месяц</label><br>
+                                                        
+                                                              <label><input type="radio" name="poll" value="3">Раз в месяц</label><br>
+                                                        
+                                                              <label><input type="radio" name="poll" value="4">Пару раз в год</label><br>
+                                                        
+                                                              <label><input type="radio" name="poll" value="5">Я здесь впервые</label><br>
+                                                        
+                                                </div>
+                                                <input type="hidden" id="poll_question_id" value="1">
+                                        </div>
+                                
+                        
+                
+
+
+    
+
+    
+        
+
+
+
+
+
+<div class="breadcrumbs" itemprop="breadcrumb">
+<div class="breadcrumbs__holder">
+<span class="breadcrumbs__item">
+<a class="breadcrumbs__link" href="https://www.kufar.by">
+Kufar.by
+</a>
+</span>
+
+
+<span class="breadcrumbs__item">
+<b class="breadcrumbs__icon">&raquo;</b>
+Вход в личный кабинет
+</span>
+
+
+
+
+
+</div>
+</div>
+
+
+    
+
+    
+
+    
+        <main class="content">
+            <div class="content__holder">
+    
+
+    
+
+
+<div class="mypages-wrap-one mypages-login">
+    <div class="mypages-login-right-col">
+        <h3 class="mypages-login-headline">Войти в личный кабинет</h3>
+        <div class="mypages-login-form">
+            <form method="post" action="https://www.kufar.by/account/do_login">
+		
+		<label>E-mail:</label>
+		<input name="email" type="text" id="email" size="35" maxlength="60" value="" />
+		
+		
+		<label>Пароль:</label>
+		<input type="password" name="passwd" id="passwd" maxlength="50" autocomplete="off" />
+		
+		
+
+		
+		<input id="remember" name="remember" value="1"  type="checkbox" />
+		<label for="remember">Запомнить меня</label>
+	
+		
+		<input id="login" class="form_button form_button_style_green form_button_size_medium form_button_width_full" name="login" type="submit" value="Войти" />
+	</form>
+
+
+        </div>
+        <a class="nohistory mypages-login-forgot-password" href="https://www.kufar.by/account/recovery">Забыли пароль?</a>
+    </div>
+	<div class="mypages-login-left-col">
+		<div class="mypages-headbar">
+			<i class="sprite_mypages_icon_login_create_profile"></i>
+			<div class="mypages-headbar-heading">
+				<h1>Ваш личный кабинет на Куфаре</h1>
+				
+			</div>
+		</div>
+		<div class="mypages-login-create-link">
+			<h4>У вас еще нет своего кабинета?</h4>
+			<a class="form_button form_button_size_medium form_button_type_registry form_button_style_green" href="https://www.kufar.by/account/create">
+			    Регистрация
+			</a>
+		</div>
+		<div class="mypages-account-features">
+    <div class="mypages-info-icon_action mypages-infomodule">
+            <i class="sprite_mypages_icon_action"></i>
+            <p>С личным кабинетом добавлять и редактировать объявления и фотографии станет еще проще!</p>
+        </div>
+    <div class="mypages-info-icon_star mypages-infomodule">
+            <i class="sprite_mypages_icon_star"></i>
+            <p>С личным кабинетом вы сможете просматривать избранное с любого компьютера!</p>
+        </div>
+    
+</div>
+
+	</div>
+</div>
+
+	
+	
+
+                
+                </div>
+            </main>
+            <div class="content__spacer"></div>
+        </div>
+		<footer class="footer">
+    <div class="footer__application">
+        <div class="footer__holder">
+            <i class="footer__promo sprite_common_by_footer_promo"></i>
+            <a class="footer__google sprite_common_by_footer_google_play" href="https://play.google.com/store/apps/details?id=se.scmv.belarus" target="_blank"></a>
+            <p class="footer__commercial"><strong>Скачай приложение Kufar для Android.</strong>Подавай объявления и ищи выгодные сделки в любое время в<br/>любом месте.</p>
+            
+        </div>
+    </div>
+    <div class="footer__menu">
+        <div class="footer__holder">
+            <nav class="footer__social">
+                
+                    <a class="footer__button footer__button_type_facebook" href="https://www.facebook.com/Kufar.by" target="_blank">f</a>
+                
+                
+                    <a class="footer__button footer__button_type_vk" href="http://vk.com/kufar_by" target="_blank">В</a>
+                
+                
+                    <a class="footer__button footer__button_type_twitter" href="https://twitter.com/Kufarby" target="_blank"><i class="sprite_common_by_footer_twitter"></i></a>
+                
+                
+                    <a class="footer__button footer__button_type_ok" href="http://www.odnoklassniki.ru/group/56798164353077" target="_blank"><i class="sprite_common_by_footer_ok"></i></a>
+                
+                
+                    <a class="footer__button footer__button_type_google" href="https://plus.google.com/u/0/117119359135141147338" target="_blank"><i class="sprite_common_by_footer_google"></i></a>
+                
+            </nav>
+            <nav class="footer__nav">
+                <a class="footer__link footer__link_type_mobile" href="https://m.kufar.by">
+                    <i class="footer__icon sprite_common_by_footer_mobile"></i>
+                    Мобильная версия
+                </a>
+                <a class="footer__link footer__link_type_help" href="https://www.kufar.by/Помощь.htm">
+                    <i class="footer__icon sprite_common_by_footer_help"></i>
+                    Помощь
+                </a>
+                <a class="footer__link footer__link_type_rules" href="https://www.kufar.by/Правила.htm">
+                    <i class="footer__icon sprite_common_by_footer_rules"></i>
+                    Правила
+                </a>
+                <a class="footer__link footer__link_type_about" href="https://www.kufar.by/О_нас.htm">
+                    <i class="footer__icon sprite_common_by_footer_about"></i>
+                    О нас
+                </a>
+                <a class="footer__link footer__link_type_feedback" href="https://www2.kufar.by/support/form/0?id=1">
+                    <i class="footer__icon sprite_common_by_footer_feedback"></i>
+                    Обратная связь
+                </a>
+                <a class="footer__link footer__link_type_advertisement" href="https://www.kufar.by/Реклама.htm">
+                    <i class="footer__icon sprite_common_by_footer_advertisement"></i>
+                    Реклама
+                </a>
+            </nav>
+        </div>
+    </div>
+    <div class="footer__content">
+        <div class="footer__holder">
+            <div class="footer__info">ООО "Шибстед Клэссифайд Медиа", УНП 191767445<br/>220030, г. Минск, ул. Зыбицкая, д. 9, оф. 46<br/>Режим работы: 10.00 - 18.00</div>
+            <div class="footer__extra">
+                <i class="footer__partner sprite_common_by_partner_erip_color"></i>
+                <i class="footer__partner sprite_common_by_partner_assist_color"></i>
+                <i class="footer__partner sprite_common_by_partner_pci_color"></i>
+                <i class="footer__partner sprite_common_by_partner_ipay_color"></i>
+                <i class="footer__partner sprite_common_by_partner_visa_secure_color"></i>
+                <i class="footer__partner sprite_common_by_partner_maestro_color"></i>
+                <i class="footer__partner sprite_common_by_partner_mastercard_color"></i>
+                <i class="footer__partner sprite_common_by_partner_belcard_color"></i>
+            </div>
+            <div class="footer__copyright">
+                &copy; Kufar - крупнейшая доска объявлений Беларуси по данным gemiusAudience, август 2015. Использование ресурса Kufar, в том числе и подача объявлений, означает согласие с <a href="javascript:void(0);" onclick="window.open('https://www.kufar.by/Пользовательское_соглашение.htm?ca=','Rules','toolbar=yes, location=yes, status=yes, scrollbars=yes, resizable=yes, width=980, height=600')">Пользовательским соглашением</a>.
+                
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<div id="scripts">
+    
+     
+
+		
+	
+	
+		
+		<script type="text/javascript" charset="utf-8">
+		<!--
+		(function(){
+		var tests = [];
+		var testvalues = [];
+		 
+		
+		})();
+	//-->
+	</script>
+	
+
+
+
+<!-- Xiti Tracking -->
+
+
+
+
+
+	
+
+
+
+
+
+
+<!-- XITI TAGGING -->
+
+<script type="text/javascript">
+<!--
+
+xt_form = "";
+if (window.xtparam != null) {
+	window.xtparam += xt_form; 
+} else { 
+	window.xtparam = xt_form;
+}
+//-->
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+xt_multc = "&x1=&x11=Russian";
+if (window.xtparam != null) {
+        window.xtparam += xt_multc; 
+} else { 
+        window.xtparam = xt_multc;
+}
+//-->
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+var xt1 = ".kufar.by";
+xtnv = document;
+xtLogDom=".xiti.com/hit.xiti";
+xtsd = "https://logs1232";
+xtsite = "469601";
+xtdm = ".kufar.by";
+xtn2 = "";
+xtpage = "apps/mypages/login/login";
+xtdi = "";
+xt_an = "";
+
+/* ]]> */
+</script>
+
+     <script type="text/javascript" src="https://content.kufar.by/js/xt.min.js?115551"></script> 
+	
+		
+	<noscript>
+		<img width="1" height="1" alt="" src="https://logs1232.xiti.com/hit.xiti?s=469601&amp;s2=&amp;p=&amp;di=&amp;an=">
+	</noscript>
+
+	
+
+	<!-- END XITI TAGGING -->
+
+
+
+
+
+    
+
+	
+	<!-- Google Analytics -->
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-17876647-4']);
+		_gaq.push(['_trackPageview']);
+		_gaq.push(['_trackPageLoadTime']);
+		$(document).ready(function(){
+			googleAnalyticsScript(document);
+		});
+	</script>
+
+    
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function (d, w, c) {
+(w[c] = w[c] || []).push(function() {
+try {
+w.yaCounter19426846 = new Ya.Metrika(
+{id:19426846, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true}
+);
+} catch(e) { }
+});
+var n = d.getElementsByTagName("script")[0],
+s = d.createElement("script"),
+f = function ()
+{ n.parentNode.insertBefore(s, n); }
+;
+s.type = "text/javascript";
+s.async = true;
+s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+if (w.opera == "[object Opera]")
+{ d.addEventListener("DOMContentLoaded", f, false); }
+else
+{ f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="//mc.yandex.ru/watch/19426846" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+    
+
+    
+
+    
+</div>
+
+
+		
+        
+	</body>
+</html>
+
+
+<!-- 2015-10-28 21:02:13 by-front01 11828 -->

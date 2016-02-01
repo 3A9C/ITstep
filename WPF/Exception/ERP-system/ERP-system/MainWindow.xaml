@@ -1,0 +1,105 @@
+﻿<Window x:Class="EnterpriseResourcePlanning.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace-EnterpriseResourcePlanning"
+        xmlns:chartingToolkit="clr-namespace:System.Windows.Controls.DataVisualization.Charting;assembly=System.Windows.Controls.DataVisualization.Toolkit"
+        Title="ERP Sstem" Height="500" Width="1000" x:Name="mainWindow" WindowStartupLocation="CenterScreen">
+
+    <Window.Resources>
+        <Style TargetType="{x:Type ListBoxItem}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <!--Стиль для элементов ListBoxItem-->
+                    <ControlTemplate TargetType="{x:Type ListBoxItem}">
+                        <Border Name="Bd" Margin="{TemplateBinding Control.Padding}">
+                            <ContentPresenter></ContentPresenter>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <!--При наведении мыши-->
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="Bd" Property="BorderThickness" Value="0.5"></Setter>
+                                <Setter TargetName="Bd" Property="BorderBrush" Value="Blue"></Setter>
+                            </Trigger>
+                            <!--При выборе-->
+                            <Trigger Property="IsSelected" Value="True">
+                                <Setter Property="TextBlock.Foreground" Value="White"></Setter>
+                                <Setter TargetName="Bd" Property="Background" Value="Blue"></Setter>
+                                <Setter TargetName="Bd" Property="BorderThickness" Value="0.5"></Setter>
+                                <Setter TargetName="Bd" Property="BorderBrush" Value="white"></Setter>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <DataTemplate x:Key="ViewEmployee" >
+            <Grid Margin="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="20"/>
+                </Grid.RowDefinitions>
+
+                <Image Grid.Column="0" Grid.Row="0" Source="{Binding Path=Photo}"/>
+                <StackPanel Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center" Orientation="Horizontal">
+                    <TextBlock x:Name="TBName" FontSize="13" Text="{Binding Path=FirstLastName}"/>
+                </StackPanel>
+
+            </Grid>
+        </DataTemplate>
+    </Window.Resources>
+
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="63*"/>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="40*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="137"/>
+            <ColumnDefinition Width="84*"/>
+            <ColumnDefinition Width="60*"/>
+            <ColumnDefinition Width="52*"/>
+            <ColumnDefinition Width="89*"/>
+        </Grid.ColumnDefinitions>
+
+        <ListBox x:Name="LBEmployees" Grid.Column="0" Grid.Row="0" Grid.RowSpan="3" ItemTemplate="{DynamicResource ViewEmployee}"
+                  HorizontalContentAlignment="Stretch" VerticalAlignment="Stretch" ItemsSource="{Binding ElementName=mainWindow, Path=Employees}" HorizontalAlignment="Left" Width="140" Grid.ColumnSpan="2">
+        </ListBox>
+
+        <chartingToolkit:Chart DataContext="{Binding ElementName=LBEmployees, Path=SelectedItem}" Title="Оклад" HorizontalAlignment="Right" Grid.RowSpan="2" Grid.Column="1" Margin="0,5,0,10" Grid.Row="1" Width="244">
+            <chartingToolkit:PieSeries ItemsSource="{Binding Money}" IndependentValueBinding="{Binding Month}" DependentValueBinding="{Binding Salary}"/>
+        </chartingToolkit:Chart>
+
+        <chartingToolkit:Chart DataContext="{Binding ElementName=LBEmployees, Path=SelectedItem}" Title="Показатели качества" HorizontalAlignment="Stretch" Grid.RowSpan="1" Grid.Column="1" Grid.ColumnSpan="2" Margin="8,10,5,0">
+            <chartingToolkit:PieSeries ItemsSource="{Binding QualityIndicator}" IndependentValueBinding="{Binding Quality}" DependentValueBinding="{Binding Indicators}"/>
+        </chartingToolkit:Chart>
+
+        <chartingToolkit:Chart DataContext="{Binding ElementName=LBEmployees, Path=SelectedItem}" Title="Рейтинг" Grid.Column="3" Grid.ColumnSpan="2" Margin="0,10,10,0">
+            <chartingToolkit:PieSeries ItemsSource="{Binding ElementName=mainWindow, Path=Employees}" IndependentValueBinding="{Binding FirstLastName}" DependentValueBinding="{Binding Reting}" IsSelectionEnabled="True">
+                <chartingToolkit:PieSeries.Effect>
+                    <DropShadowEffect Opacity="0.59" Color="#FF343333"/>
+                </chartingToolkit:PieSeries.Effect>
+            </chartingToolkit:PieSeries>
+        </chartingToolkit:Chart>
+
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Column="2" Grid.Row="1" Grid.ColumnSpan="3" Margin="5,5,10,10" Grid.RowSpan="2"/>
+        <Label Content="Проекты" Grid.Column="3" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" FontFamily="Times New Roman" FontSize="20" Margin="64,19,10,9" Height="32" Width="82"/>
+        <StackPanel Grid.Column="2" DataContext="{Binding ElementName=LBEmployees, Path=SelectedItem}" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Grid.Row="2" Grid.ColumnSpan="3" Margin="5,0,10,0" >
+            <DataGrid IsReadOnly="True" CanUserAddRows="False" ItemsSource="{Binding Projects}"  x:Name="DGEmployeeProjects"  ColumnHeaderHeight="30" AutoGenerateColumns="False" BorderThickness="5" Margin="10,0">
+                <DataGrid.Columns >
+                    <DataGridTextColumn Header="Название" Width="40*" Binding="{Binding NameProject}"/>
+                    <DataGridTextColumn Header="Заказчик" Width="20*" Binding="{Binding NameClient}"/>
+                    <DataGridTextColumn Header="Начало" Width="15*" Binding="{Binding StartDate}"/>
+                    <DataGridTextColumn Header="Конец" Width="15*" Binding="{Binding EndDate}"/>
+                    <DataGridTextColumn Header="Готовность" Width="15*" Binding="{Binding Complete}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<ArrayOfMark xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Mark>
+    <value>10</value>
+    <pupil>
+      <name>Andrew</name>
+      <birthday>0001-01-01T00:00:00</birthday>
+    </pupil>
+    <for_what>home work</for_what>
+  </Mark>
+  <Mark>
+    <value>10</value>
+    <pupil>
+      <name>Kolya</name>
+      <birthday>0001-01-01T00:00:00</birthday>
+    </pupil>
+    <for_what>class work</for_what>
+  </Mark>
+  <Mark>
+    <value>10</value>
+    <pupil>
+      <name>Olya</name>
+      <birthday>0001-01-01T00:00:00</birthday>
+    </pupil>
+    <for_what>good actions</for_what>
+  </Mark>
+  <Mark>
+    <value>10</value>
+    <pupil>
+      <name>Ira</name>
+      <birthday>0001-01-01T00:00:00</birthday>
+    </pupil>
+    <for_what>home work</for_what>
+  </Mark>
+</ArrayOfMark>

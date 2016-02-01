@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Xceed.Products.Wpf.DataGrid.Full</id>
+    <version>5.7.15466.10150</version>
+    <title>Xceed DataGrid for WPF (Complete)</title>
+    <authors>Xceed</authors>
+    <owners>Xceed</owners>
+    <licenseUrl>http://xceed.com/pages/Footer/Right/LicensesAgreement.aspx</licenseUrl>
+    <projectUrl>http://www.xceed.com/Grid_WPF_Intro.html</projectUrl>
+    <iconUrl>http://xceed.com/images/NuGet/Datagrid.png</iconUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>Deliver robust apps that give your end-users a rich, fluid, high-performance experience. The only datagrid with asynchronous data virtualization: your grid feels fast even with remote data sources!</description>
+    <summary>The complete feature set of the Xceed DataGrid for WPF including 3D Views and all themes assemblies</summary>
+    <releaseNotes>Version 5.7 provides 32 bug fixes and improvements, including the ability to sort foreign key columns by the values displayed in its cells rather than the value of the foreign key itself.</releaseNotes>
+    <copyright>Copyright © Xceed Software Inc. 2007-2015</copyright>
+    <tags>xceed datagrid grid wpf controls 3dview theme</tags>
+    <dependencies>
+      <dependency id="Xceed.Wpf.Controls" version="[5.7.15466.10150]" />
+      <dependency id="Xceed.Wpf.DataGrid" version="[5.7.15466.10150]" />
+      <dependency id="Xceed.Wpf.DataGrid.Views3D" version="[5.7.15466.10150]" />
+      <dependency id="Xceed.Wpf.DataGrid.ThemePack.1" version="[5.7.15466.10150]" />
+      <dependency id="Xceed.Wpf.DataGrid.ThemePack.2" version="[5.7.15466.10150]" />
+      <dependency id="Xceed.Wpf.DataGrid.ThemePack.3" version="[5.7.15466.10150]" />
+      <dependency id="Xceed.Wpf.DataGrid.ThemePack.4" version="[5.7.15466.10150]" />
+    </dependencies>
+  </metadata>
+</package>

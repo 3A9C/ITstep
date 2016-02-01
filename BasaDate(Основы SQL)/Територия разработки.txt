@@ -1,0 +1,11 @@
+Micrsoft exec
+
+// Запросы
+
+Select LastName From Shoppe
+
+// ДЗ 
+
+sql-ex.ru 
+1. Зарегистрироваться - Выполнено
+2. Выполнить 5 заданий и выложить на Mystat

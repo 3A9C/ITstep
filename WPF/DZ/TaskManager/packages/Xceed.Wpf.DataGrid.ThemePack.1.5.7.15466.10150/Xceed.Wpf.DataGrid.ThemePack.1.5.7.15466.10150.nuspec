@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Xceed.Wpf.DataGrid.ThemePack.1</id>
+    <version>5.7.15466.10150</version>
+    <title>Xceed - DataGrid - ThemePack 1</title>
+    <authors>Xceed</authors>
+    <owners>Xceed</owners>
+    <licenseUrl>http://xceed.com/pages/Footer/Right/LicensesAgreement.aspx</licenseUrl>
+    <projectUrl>http://www.xceed.com/Grid_WPF_Intro.html</projectUrl>
+    <iconUrl>http://xceed.com/images/SocialNetworks/LogoXCEEDTwitter.png</iconUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>Three Office themes (black, blue, and silver) to let you create applications with a more traditional but nevertheless modern look for business applications. A Media theme, to let you apply the pleasing styles found in audio/visual entertainment applications.</description>
+    <summary>Office 2007 and Media themes for Xceed DataGrid for WPF</summary>
+    <releaseNotes>See Xceed DataGrid for WPF package for complete release notes:
+http://www.nuget.org/packages/Xceed.Products.Wpf.DataGrid.Full/5.7.15466.10150</releaseNotes>
+    <copyright>Copyright © Xceed Software Inc. 2007-2015</copyright>
+    <tags>xceed datagrid grid wpf theme office</tags>
+    <dependencies>
+      <dependency id="Xceed.Wpf.DataGrid" version="[5.7.15466.10150]" />
+    </dependencies>
+    <references>
+      <reference file="Xceed.Wpf.DataGrid.ThemePack.1.v5.7.dll" />
+    </references>
+  </metadata>
+</package>

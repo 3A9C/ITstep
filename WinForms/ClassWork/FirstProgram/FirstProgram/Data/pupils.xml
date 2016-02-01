@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <pupil id="0">
+    <name>Андрей</name>
+    <surname>Троян</surname>
+  </pupil>
+  <pupil id="1">
+    <name>Игорь</name>
+    <surname>Сароко</surname>
+  </pupil>
+  <pupil id="2">
+    <name>Коля</name>
+    <surname>Морщинин</surname>
+  </pupil>
+  <pupil id="3">
+    <name>Ира</name>
+    <surname>Лесина</surname>
+  </pupil>
+  <pupil id="4">
+    <name>Андрей</name>
+    <surname>Пинчук</surname>
+  </pupil>
+  <pupil id="5">
+    <name>Оля</name>
+    <surname>Пирожник</surname>
+  </pupil>
+  <pupil id="6">
+    <name>Арсений</name>
+    <surname>Виноградов</surname>
+  </pupil>
+  <pupil id="7">
+    <name>Олег</name>
+    <surname>Гребенко</surname>
+  </pupil>
+</root>
