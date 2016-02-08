@@ -1,0 +1,251 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ExcelToLinq.1.0.0.0.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:ExcelToLinq.Fakes.ShimExcelColumnAttribute">
+            <summary>Shim type of ExcelToLinq.ExcelColumnAttribute</summary>
+        </member>
+        <member name="M:ExcelToLinq.Fakes.ShimExcelColumnAttribute.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:ExcelToLinq.Fakes.ShimExcelColumnAttribute.#ctor(ExcelToLinq.ExcelColumnAttribute)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:ExcelToLinq.Fakes.ShimExcelColumnAttribute.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:ExcelToLinq.Fakes.ShimExcelColumnAttribute.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:ExcelToLinq.Fakes.ShimExcelColumnAttribute.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:ExcelToLinq.Fakes.ShimExcelColumnAttribute.Constructor">
+            <summary>Sets the shim of ExcelColumnAttribute.ExcelColumnAttribute()</summary>
+        </member>
+        <member name="P:ExcelToLinq.Fakes.ShimExcelColumnAttribute.ConstructorString">
+            <summary>Sets the shim of ExcelColumnAttribute.ExcelColumnAttribute(String Name)</summary>
+        </member>
+        <member name="P:ExcelToLinq.Fakes.ShimExcelColumnAttribute.NameGet">
+            <summary>Sets the shim of ExcelColumnAttribute.get_Name()</summary>
+        </member>
+        <member name="P:ExcelToLinq.Fakes.ShimExcelColumnAttribute.NameSetString">
+            <summary>Sets the shim of ExcelColumnAttribute.set_Name(String value)</summary>
+        </member>
+        <member name="T:ExcelToLinq.Fakes.ShimExcelColumnAttribute.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:ExcelToLinq.Fakes.ShimExcelColumnAttribute.AllInstances.NameGet">
+            <summary>Sets the shim of ExcelColumnAttribute.get_Name()</summary>
+        </member>
+        <member name="P:ExcelToLinq.Fakes.ShimExcelColumnAttribute.AllInstances.NameSetString">
+            <summary>Sets the shim of ExcelColumnAttribute.set_Name(String value)</summary>
+        </member>
+        <member name="T:ExcelToLinq.Fakes.ShimExcelNotMapAttribute">
+            <summary>Shim type of ExcelToLinq.ExcelNotMapAttribute</summary>
+        </member>
+        <member name="M:ExcelToLinq.Fakes.ShimExcelNotMapAttribute.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:ExcelToLinq.Fakes.ShimExcelNotMapAttribute.#ctor(ExcelToLinq.ExcelNotMapAttribute)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:ExcelToLinq.Fakes.ShimExcelNotMapAttribute.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:ExcelToLinq.Fakes.ShimExcelNotMapAttribute.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:ExcelToLinq.Fakes.ShimExcelNotMapAttribute.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:ExcelToLinq.Fakes.ShimExcelNotMapAttribute.Constructor">
+            <summary>Sets the shim of ExcelNotMapAttribute.ExcelNotMapAttribute()</summary>
+        </member>
+        <member name="T:ExcelToLinq.Fakes.ShimExcelNotMapAttribute.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="T:ExcelToLinq.Fakes.ShimExcelToEntity">
+            <summary>Shim type of ExcelToLinq.ExcelToEntity</summary>
+        </member>
+        <member name="M:ExcelToLinq.Fakes.ShimExcelToEntity.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:ExcelToLinq.Fakes.ShimExcelToEntity.#ctor(ExcelToLinq.ExcelToEntity)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:ExcelToLinq.Fakes.ShimExcelToEntity.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:ExcelToLinq.Fakes.ShimExcelToEntity.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:ExcelToLinq.Fakes.ShimExcelToEntity.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:ExcelToLinq.Fakes.ShimExcelToEntity.GetEntityOf1DataRow``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Data.DataRow,``0})">
+            <summary>Sets the shim of ExcelToEntity.GetEntity(DataRow row)</summary>
+        </member>
+        <member name="M:ExcelToLinq.Fakes.ShimExcelToEntity.ReadOf1Int32Int32String``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Int32,System.Int32,System.String,System.Collections.Generic.IEnumerable{``0}})">
+            <summary>Sets the shim of ExcelToEntity.Read(Int32 StartRow, Int32 StartColumn, String SheetName)</summary>
+        </member>
+        <member name="P:ExcelToLinq.Fakes.ShimExcelToEntity.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:ExcelToLinq.Fakes.ShimExcelToEntity.ConstructorStreamExcelType">
+            <summary>Sets the shim of ExcelToEntity.ExcelToEntity(Stream s, ExcelType et)</summary>
+        </member>
+        <member name="P:ExcelToLinq.Fakes.ShimExcelToEntity.Dispose">
+            <summary>Sets the shim of ExcelToEntity.Dispose()</summary>
+        </member>
+        <member name="P:ExcelToLinq.Fakes.ShimExcelToEntity.HasHeadersGet">
+            <summary>Sets the shim of ExcelToEntity.get_HasHeaders()</summary>
+        </member>
+        <member name="P:ExcelToLinq.Fakes.ShimExcelToEntity.HasHeadersSetBoolean">
+            <summary>Sets the shim of ExcelToEntity.set_HasHeaders(Boolean value)</summary>
+        </member>
+        <member name="P:ExcelToLinq.Fakes.ShimExcelToEntity.getTableInt32Int32String">
+            <summary>Sets the shim of ExcelToEntity.getTable(Int32 startRow, Int32 startCol, String sheetName)</summary>
+        </member>
+        <member name="T:ExcelToLinq.Fakes.ShimExcelToEntity.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:ExcelToLinq.Fakes.ShimExcelToEntity.AllInstances.GetEntityOf1DataRow``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{ExcelToLinq.ExcelToEntity,System.Data.DataRow,``0})">
+            <summary>Sets the shim of ExcelToEntity.GetEntity(DataRow row)</summary>
+        </member>
+        <member name="M:ExcelToLinq.Fakes.ShimExcelToEntity.AllInstances.ReadOf1Int32Int32String``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{ExcelToLinq.ExcelToEntity,System.Int32,System.Int32,System.String,System.Collections.Generic.IEnumerable{``0}})">
+            <summary>Sets the shim of ExcelToEntity.Read(Int32 StartRow, Int32 StartColumn, String SheetName)</summary>
+        </member>
+        <member name="P:ExcelToLinq.Fakes.ShimExcelToEntity.AllInstances.Dispose">
+            <summary>Sets the shim of ExcelToEntity.Dispose()</summary>
+        </member>
+        <member name="P:ExcelToLinq.Fakes.ShimExcelToEntity.AllInstances.HasHeadersGet">
+            <summary>Sets the shim of ExcelToEntity.get_HasHeaders()</summary>
+        </member>
+        <member name="P:ExcelToLinq.Fakes.ShimExcelToEntity.AllInstances.HasHeadersSetBoolean">
+            <summary>Sets the shim of ExcelToEntity.set_HasHeaders(Boolean value)</summary>
+        </member>
+        <member name="P:ExcelToLinq.Fakes.ShimExcelToEntity.AllInstances.getTableInt32Int32String">
+            <summary>Sets the shim of ExcelToEntity.getTable(Int32 startRow, Int32 startCol, String sheetName)</summary>
+        </member>
+        <member name="T:ExcelToLinq.Fakes.StubExcelColumnAttribute">
+            <summary>Stub type of ExcelToLinq.ExcelColumnAttribute</summary>
+        </member>
+        <member name="M:ExcelToLinq.Fakes.StubExcelColumnAttribute.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:ExcelToLinq.Fakes.StubExcelColumnAttribute.#ctor(System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:ExcelToLinq.Fakes.StubExcelColumnAttribute.Equals(System.Object)">
+            <summary>Sets the stub of Attribute.Equals(Object obj)</summary>
+        </member>
+        <member name="F:ExcelToLinq.Fakes.StubExcelColumnAttribute.EqualsObject">
+            <summary>Sets the stub of Attribute.Equals(Object obj)</summary>
+        </member>
+        <member name="M:ExcelToLinq.Fakes.StubExcelColumnAttribute.GetHashCode">
+            <summary>Sets the stub of Attribute.GetHashCode()</summary>
+        </member>
+        <member name="F:ExcelToLinq.Fakes.StubExcelColumnAttribute.GetHashCode01">
+            <summary>Sets the stub of Attribute.GetHashCode()</summary>
+        </member>
+        <member name="M:ExcelToLinq.Fakes.StubExcelColumnAttribute.InitializeStub">
+            <summary>Initializes a new instance of type StubExcelColumnAttribute</summary>
+        </member>
+        <member name="M:ExcelToLinq.Fakes.StubExcelColumnAttribute.IsDefaultAttribute">
+            <summary>Sets the stub of Attribute.IsDefaultAttribute()</summary>
+        </member>
+        <member name="F:ExcelToLinq.Fakes.StubExcelColumnAttribute.IsDefaultAttribute01">
+            <summary>Sets the stub of Attribute.IsDefaultAttribute()</summary>
+        </member>
+        <member name="M:ExcelToLinq.Fakes.StubExcelColumnAttribute.Match(System.Object)">
+            <summary>Sets the stub of Attribute.Match(Object obj)</summary>
+        </member>
+        <member name="F:ExcelToLinq.Fakes.StubExcelColumnAttribute.MatchObject">
+            <summary>Sets the stub of Attribute.Match(Object obj)</summary>
+        </member>
+        <member name="F:ExcelToLinq.Fakes.StubExcelColumnAttribute.TypeIdGet">
+            <summary>Sets the stub of Attribute.get_TypeId()</summary>
+        </member>
+        <member name="P:ExcelToLinq.Fakes.StubExcelColumnAttribute.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:ExcelToLinq.Fakes.StubExcelColumnAttribute.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:ExcelToLinq.Fakes.StubExcelColumnAttribute.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:ExcelToLinq.Fakes.StubExcelColumnAttribute.TypeId">
+            <summary>Sets the stub of Attribute.get_TypeId()</summary>
+        </member>
+        <member name="T:ExcelToLinq.Fakes.StubExcelNotMapAttribute">
+            <summary>Stub type of ExcelToLinq.ExcelNotMapAttribute</summary>
+        </member>
+        <member name="M:ExcelToLinq.Fakes.StubExcelNotMapAttribute.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:ExcelToLinq.Fakes.StubExcelNotMapAttribute.Equals(System.Object)">
+            <summary>Sets the stub of Attribute.Equals(Object obj)</summary>
+        </member>
+        <member name="F:ExcelToLinq.Fakes.StubExcelNotMapAttribute.EqualsObject">
+            <summary>Sets the stub of Attribute.Equals(Object obj)</summary>
+        </member>
+        <member name="M:ExcelToLinq.Fakes.StubExcelNotMapAttribute.GetHashCode">
+            <summary>Sets the stub of Attribute.GetHashCode()</summary>
+        </member>
+        <member name="F:ExcelToLinq.Fakes.StubExcelNotMapAttribute.GetHashCode01">
+            <summary>Sets the stub of Attribute.GetHashCode()</summary>
+        </member>
+        <member name="M:ExcelToLinq.Fakes.StubExcelNotMapAttribute.InitializeStub">
+            <summary>Initializes a new instance of type StubExcelNotMapAttribute</summary>
+        </member>
+        <member name="M:ExcelToLinq.Fakes.StubExcelNotMapAttribute.IsDefaultAttribute">
+            <summary>Sets the stub of Attribute.IsDefaultAttribute()</summary>
+        </member>
+        <member name="F:ExcelToLinq.Fakes.StubExcelNotMapAttribute.IsDefaultAttribute01">
+            <summary>Sets the stub of Attribute.IsDefaultAttribute()</summary>
+        </member>
+        <member name="M:ExcelToLinq.Fakes.StubExcelNotMapAttribute.Match(System.Object)">
+            <summary>Sets the stub of Attribute.Match(Object obj)</summary>
+        </member>
+        <member name="F:ExcelToLinq.Fakes.StubExcelNotMapAttribute.MatchObject">
+            <summary>Sets the stub of Attribute.Match(Object obj)</summary>
+        </member>
+        <member name="F:ExcelToLinq.Fakes.StubExcelNotMapAttribute.TypeIdGet">
+            <summary>Sets the stub of Attribute.get_TypeId()</summary>
+        </member>
+        <member name="P:ExcelToLinq.Fakes.StubExcelNotMapAttribute.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:ExcelToLinq.Fakes.StubExcelNotMapAttribute.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:ExcelToLinq.Fakes.StubExcelNotMapAttribute.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:ExcelToLinq.Fakes.StubExcelNotMapAttribute.TypeId">
+            <summary>Sets the stub of Attribute.get_TypeId()</summary>
+        </member>
+        <member name="T:ExcelToLinq.Fakes.StubExcelToEntity">
+            <summary>Stub type of ExcelToLinq.ExcelToEntity</summary>
+        </member>
+        <member name="M:ExcelToLinq.Fakes.StubExcelToEntity.#ctor(System.IO.Stream,ExcelToLinq.ExcelType)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:ExcelToLinq.Fakes.StubExcelToEntity.InitializeStub">
+            <summary>Initializes a new instance of type StubExcelToEntity</summary>
+        </member>
+        <member name="P:ExcelToLinq.Fakes.StubExcelToEntity.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:ExcelToLinq.Fakes.StubExcelToEntity.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:ExcelToLinq.Fakes.StubExcelToEntity.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+    </members>
+</doc>

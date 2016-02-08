@@ -1,0 +1,6 @@
+D:\github\Morshinin\ITstep\ADO.net\day_9LINQ_toXML_EXCEL\day_9LINQ_toXML_EXCEL\Fakes\ExcelToLinq.fakes : warning : Cannot generate stub for ExcelToLinq.ExcelType: type is a value type.
+D:\github\Morshinin\ITstep\ADO.net\day_9LINQ_toXML_EXCEL\day_9LINQ_toXML_EXCEL\Fakes\ExcelToLinq.fakes : warning : Cannot generate shim for ExcelToLinq.ExcelToEntity+<>c: type is not supported because of internal limitations.
+D:\github\Morshinin\ITstep\ADO.net\day_9LINQ_toXML_EXCEL\day_9LINQ_toXML_EXCEL\Fakes\ExcelToLinq.fakes : warning : Cannot generate shim for ExcelToLinq.ExcelToEntity+<>c__6`1: type is not supported because of internal limitations.
+D:\github\Morshinin\ITstep\ADO.net\day_9LINQ_toXML_EXCEL\day_9LINQ_toXML_EXCEL\Fakes\ExcelToLinq.fakes : warning : Cannot generate shim for ExcelToLinq.ExcelToEntity+<>c__8`1: type is not supported because of internal limitations.
+D:\github\Morshinin\ITstep\ADO.net\day_9LINQ_toXML_EXCEL\day_9LINQ_toXML_EXCEL\Fakes\ExcelToLinq.fakes : warning : Cannot generate shim for ExcelToLinq.ExcelToEntity+<Read>d__6`1: type is not supported because of internal limitations.
+D:\github\Morshinin\ITstep\ADO.net\day_9LINQ_toXML_EXCEL\day_9LINQ_toXML_EXCEL\Fakes\ExcelToLinq.fakes : warning : Cannot generate shim for ExcelToLinq.ExcelType: type is an enum.
