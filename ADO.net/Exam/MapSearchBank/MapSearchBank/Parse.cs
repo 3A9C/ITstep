@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MapSearchBank
 {
-    public class Markers
+    public class Parse
     {
 
     }

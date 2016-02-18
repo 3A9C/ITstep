@@ -2,12 +2,15 @@
 using GMap.NET.WindowsForms;
 using GMap.NET.WindowsForms.Markers;
 using GMap.NET.WindowsForms.ToolTips;
+using HtmlAgilityPack;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -123,6 +126,25 @@ namespace MapSearchBank
             gMapControl1.Position = new GMap.NET.PointLatLng(53.9018722, 27.6574339);
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            HtmlAgilityPack.HtmlDocument doc = new HtmlAgilityPack.HtmlDocument();
+            WebClient wc = new WebClient();
+            wc.Encoding = Encoding.UTF8;
+            doc.LoadHtml(wc.DownloadString("http://myfin.by/currency/minsk"));
+
+            foreach (HtmlAgilityPack.HtmlNode tablet in doc.DocumentNode.SelectNodes("//*[@id='workarea']/div[3]/div[3]/div/table/tbody"))
+            {
+                foreach (HtmlAgilityPack.HtmlNode row in tablet.SelectNodes("tr[1]"))
+                {
+                    foreach (HtmlNode cell in row.SelectNodes("th|td"))
+                    {
+                        richTextBox1.Text += cell.InnerText + "\r\n";
+                    }
+                }
+            }
+            
+        }
     }
 
 
