@@ -128,21 +128,48 @@ namespace MapSearchBank
 
         private void button2_Click(object sender, EventArgs e)
         {
-            HtmlAgilityPack.HtmlDocument doc = new HtmlAgilityPack.HtmlDocument();
-            WebClient wc = new WebClient();
-            wc.Encoding = Encoding.UTF8;
-            doc.LoadHtml(wc.DownloadString("http://myfin.by/currency/minsk"));
 
-            foreach (HtmlAgilityPack.HtmlNode tablet in doc.DocumentNode.SelectNodes("//*[@id='workarea']/div[3]/div[3]/div/table/tbody"))
-            {
-                foreach (HtmlAgilityPack.HtmlNode row in tablet.SelectNodes("tr[1]"))
+                ////Информация Отделения банка
+                ////URL
+                //foreach (HtmlAgilityPack.HtmlNode href in doc.DocumentNode.SelectNodes("//*[@id='accordion-5']/div/div[2]/table/tbody/tr[1]/td[2]/div[1]/a"))
+                //{
+                //    var aTagHrefValue = href.Attributes["href"];
+                //    richTextBox1.Text += aTagHrefValue.Value + "\r\n";
+                //}
+                //Описание оделение
+
+            //*[@id="accordion-5"]/div/div[2]/table/tbody/tr[1]
+            //Кординаты отделения
+
+            //Курсы валют
+
+                //Add Banks 
+                HtmlAgilityPack.HtmlDocument doc = new HtmlAgilityPack.HtmlDocument(); 
+                WebClient wc = new WebClient(); 
+                wc.Encoding = Encoding.UTF8; 
+                doc.LoadHtml(wc.DownloadString("http://myfin.by/currency/minsk")); 
+                int i = 1;
+                while (doc.DocumentNode.SelectNodes("//*[@id='workarea']/div[3]/div[3]/div/table/tbody/tr").Count - 1 >= i)
                 {
-                    foreach (HtmlNode cell in row.SelectNodes("th|td"))
+                    foreach (HtmlAgilityPack.HtmlNode tablet in doc.DocumentNode.SelectNodes("//*[@id='workarea']/div[3]/div[3]/div/table/tbody/tr[" + i++ + "]"))
                     {
-                        richTextBox1.Text += cell.InnerText + "\r\n";
+                        foreach (HtmlAgilityPack.HtmlNode row in tablet.SelectNodes("td[1]"))
+                        {
+                        }
+
                     }
+
+
+                    foreach (HtmlAgilityPack.HtmlNode tablet in doc.DocumentNode.SelectNodes("//*[@id='accordion-5']/div/div[2]/table/tbody/tr[" + i++ + "]"))
+                    {
+                        foreach (HtmlAgilityPack.HtmlNode row in tablet.SelectNodes("td[1]"))
+                        {
+                        }
+
+                    }
+
+                    //i += 2; 
                 }
-            }
             
         }
     }
