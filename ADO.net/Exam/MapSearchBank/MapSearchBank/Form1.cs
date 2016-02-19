@@ -24,7 +24,13 @@ namespace MapSearchBank
             InitializeComponent();
             this.WindowState = FormWindowState.Maximized;
             Load += gMapControl1_Load;
+
+
+            foreach (var c in Program.banksSystem.Bank)
+                checkedListBoxBanks.Items.Add(c.Name);
         }
+
+
 
         private void gMapControl1_Load(object sender, EventArgs e)
         {
@@ -93,8 +99,6 @@ namespace MapSearchBank
 
             //Д
             gMapControl1.Position = new GMap.NET.PointLatLng(53.9018722, 27.6574339);
-
-            gMapControl1.MouseClick += gMapControl1_MouseClick;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -112,66 +116,12 @@ namespace MapSearchBank
             gMapControl1.Position = new GMap.NET.PointLatLng(53.9018722, 27.6574339);
         }
 
-        void gMapControl1_MouseClick(object sender, MouseEventArgs e)
+        private void buttonAddDepartment_Click(object sender, EventArgs e)
         {
-            double X = gMapControl1.FromLocalToLatLng(e.X, e.Y).Lng;
-            double Y = gMapControl1.FromLocalToLatLng(e.X, e.Y).Lat;
-            GMapOverlay markersOverlay = new GMapOverlay("NewMarkers");
-            GMarkerGoogle marker = new GMarkerGoogle(new PointLatLng(Y, X), GMarkerGoogleType.green);
-            marker.ToolTip = new GMapRoundedToolTip(marker);
-            marker.ToolTipText = "Красная площадь";
-            markersOverlay.Markers.Add(marker);
-            gMapControl1.Overlays.Add(markersOverlay);
-            //fix ставим на правильное место
-            gMapControl1.Position = new GMap.NET.PointLatLng(53.9018722, 27.6574339);
+            FormAddDepartment formAddDepartment = new FormAddDepartment();
+            formAddDepartment.ShowDialog();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-                ////Информация Отделения банка
-                ////URL
-                //foreach (HtmlAgilityPack.HtmlNode href in doc.DocumentNode.SelectNodes("//*[@id='accordion-5']/div/div[2]/table/tbody/tr[1]/td[2]/div[1]/a"))
-                //{
-                //    var aTagHrefValue = href.Attributes["href"];
-                //    richTextBox1.Text += aTagHrefValue.Value + "\r\n";
-                //}
-                //Описание оделение
-
-            //*[@id="accordion-5"]/div/div[2]/table/tbody/tr[1]
-            //Кординаты отделения
-
-            //Курсы валют
-
-                //Add Banks 
-                HtmlAgilityPack.HtmlDocument doc = new HtmlAgilityPack.HtmlDocument(); 
-                WebClient wc = new WebClient(); 
-                wc.Encoding = Encoding.UTF8; 
-                doc.LoadHtml(wc.DownloadString("http://myfin.by/currency/minsk")); 
-                int i = 1;
-                while (doc.DocumentNode.SelectNodes("//*[@id='workarea']/div[3]/div[3]/div/table/tbody/tr").Count - 1 >= i)
-                {
-                    foreach (HtmlAgilityPack.HtmlNode tablet in doc.DocumentNode.SelectNodes("//*[@id='workarea']/div[3]/div[3]/div/table/tbody/tr[" + i++ + "]"))
-                    {
-                        foreach (HtmlAgilityPack.HtmlNode row in tablet.SelectNodes("td[1]"))
-                        {
-                        }
-
-                    }
-
-
-                    foreach (HtmlAgilityPack.HtmlNode tablet in doc.DocumentNode.SelectNodes("//*[@id='accordion-5']/div/div[2]/table/tbody/tr[" + i++ + "]"))
-                    {
-                        foreach (HtmlAgilityPack.HtmlNode row in tablet.SelectNodes("td[1]"))
-                        {
-                        }
-
-                    }
-
-                    //i += 2; 
-                }
-            
-        }
     }
 
 

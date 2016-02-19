@@ -120,7 +120,13 @@ namespace BanksSearchApp
 
 // СОБЯТИЯ ПО КАРТЕ !
             gMapControl1.MouseClick += gMapControl1_MouseClick;
+            gMapControl1.OnMarkerClick += markerclick;
         
+        }
+
+        private void markerclick(GMapMarker item, MouseEventArgs e)
+        {
+            MessageBox.Show("show");
         }
 
        

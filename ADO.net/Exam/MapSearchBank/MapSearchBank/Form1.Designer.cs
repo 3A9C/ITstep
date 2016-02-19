@@ -37,7 +37,8 @@
             this.elementHost1 = new System.Windows.Forms.Integration.ElementHost();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.buttonAddDepartment = new System.Windows.Forms.Button();
+            this.checkedListBoxBanks = new System.Windows.Forms.CheckedListBox();
             this.SuspendLayout();
             // 
             // BottomToolStripPanel
@@ -108,9 +109,11 @@
             // elementHost1
             // 
             this.elementHost1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.elementHost1.Location = new System.Drawing.Point(244, 0);
+            this.elementHost1.BackColor = System.Drawing.Color.Transparent;
+            this.elementHost1.BackColorTransparent = true;
+            this.elementHost1.Location = new System.Drawing.Point(685, 0);
             this.elementHost1.Name = "elementHost1";
-            this.elementHost1.Size = new System.Drawing.Size(627, 408);
+            this.elementHost1.Size = new System.Drawing.Size(186, 408);
             this.elementHost1.TabIndex = 1;
             this.elementHost1.Text = "elementHost1";
             this.elementHost1.Child = null;
@@ -135,29 +138,41 @@
             this.button2.TabIndex = 3;
             this.button2.Text = "Показать лучшый курс";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // richTextBox1
+            // buttonAddDepartment
             // 
-            this.richTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.richTextBox1.Location = new System.Drawing.Point(266, 0);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(605, 336);
-            this.richTextBox1.TabIndex = 5;
-            this.richTextBox1.Text = "";
+            this.buttonAddDepartment.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonAddDepartment.Location = new System.Drawing.Point(700, 313);
+            this.buttonAddDepartment.Name = "buttonAddDepartment";
+            this.buttonAddDepartment.Size = new System.Drawing.Size(158, 23);
+            this.buttonAddDepartment.TabIndex = 4;
+            this.buttonAddDepartment.Text = "Добавить отделение";
+            this.buttonAddDepartment.UseVisualStyleBackColor = true;
+            this.buttonAddDepartment.Click += new System.EventHandler(this.buttonAddDepartment_Click);
+            // 
+            // checkedListBoxBanks
+            // 
+            this.checkedListBoxBanks.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.checkedListBoxBanks.FormattingEnabled = true;
+            this.checkedListBoxBanks.Location = new System.Drawing.Point(700, 12);
+            this.checkedListBoxBanks.Name = "checkedListBoxBanks";
+            this.checkedListBoxBanks.Size = new System.Drawing.Size(158, 154);
+            this.checkedListBoxBanks.TabIndex = 5;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(870, 406);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.checkedListBoxBanks);
+            this.Controls.Add(this.buttonAddDepartment);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.elementHost1);
             this.Controls.Add(this.gMapControl1);
             this.Name = "Form1";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
             this.ResumeLayout(false);
 
@@ -174,7 +189,8 @@
         private System.Windows.Forms.Integration.ElementHost elementHost1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.Button buttonAddDepartment;
+        private System.Windows.Forms.CheckedListBox checkedListBoxBanks;
 
     }
 }
