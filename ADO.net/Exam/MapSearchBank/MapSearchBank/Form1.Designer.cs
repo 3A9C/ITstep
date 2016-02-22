@@ -36,9 +36,7 @@
             this.gMapControl1 = new GMap.NET.WindowsForms.GMapControl();
             this.elementHost1 = new System.Windows.Forms.Integration.ElementHost();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.buttonAddDepartment = new System.Windows.Forms.Button();
-            this.checkedListBoxBanks = new System.Windows.Forms.CheckedListBox();
             this.SuspendLayout();
             // 
             // BottomToolStripPanel
@@ -113,7 +111,7 @@
             this.elementHost1.BackColorTransparent = true;
             this.elementHost1.Location = new System.Drawing.Point(685, 0);
             this.elementHost1.Name = "elementHost1";
-            this.elementHost1.Size = new System.Drawing.Size(186, 408);
+            this.elementHost1.Size = new System.Drawing.Size(186, 80);
             this.elementHost1.TabIndex = 1;
             this.elementHost1.Text = "elementHost1";
             this.elementHost1.Child = null;
@@ -121,7 +119,7 @@
             // button1
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(700, 371);
+            this.button1.Location = new System.Drawing.Point(700, 41);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(158, 23);
             this.button1.TabIndex = 2;
@@ -129,20 +127,10 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
-            // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Location = new System.Drawing.Point(700, 342);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(158, 23);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Показать лучшый курс";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // buttonAddDepartment
             // 
             this.buttonAddDepartment.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonAddDepartment.Location = new System.Drawing.Point(700, 313);
+            this.buttonAddDepartment.Location = new System.Drawing.Point(700, 12);
             this.buttonAddDepartment.Name = "buttonAddDepartment";
             this.buttonAddDepartment.Size = new System.Drawing.Size(158, 23);
             this.buttonAddDepartment.TabIndex = 4;
@@ -150,23 +138,12 @@
             this.buttonAddDepartment.UseVisualStyleBackColor = true;
             this.buttonAddDepartment.Click += new System.EventHandler(this.buttonAddDepartment_Click);
             // 
-            // checkedListBoxBanks
-            // 
-            this.checkedListBoxBanks.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.checkedListBoxBanks.FormattingEnabled = true;
-            this.checkedListBoxBanks.Location = new System.Drawing.Point(700, 12);
-            this.checkedListBoxBanks.Name = "checkedListBoxBanks";
-            this.checkedListBoxBanks.Size = new System.Drawing.Size(158, 154);
-            this.checkedListBoxBanks.TabIndex = 5;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(870, 406);
-            this.Controls.Add(this.checkedListBoxBanks);
             this.Controls.Add(this.buttonAddDepartment);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.elementHost1);
             this.Controls.Add(this.gMapControl1);
@@ -188,9 +165,7 @@
         private GMap.NET.WindowsForms.GMapControl gMapControl1;
         private System.Windows.Forms.Integration.ElementHost elementHost1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button buttonAddDepartment;
-        private System.Windows.Forms.CheckedListBox checkedListBoxBanks;
 
     }
 }

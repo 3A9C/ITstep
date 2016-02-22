@@ -24,10 +24,6 @@ namespace MapSearchBank
             InitializeComponent();
             this.WindowState = FormWindowState.Maximized;
             Load += gMapControl1_Load;
-
-
-            foreach (var c in Program.banksSystem.Bank)
-                checkedListBoxBanks.Items.Add(c.Name);
         }
 
 
@@ -101,19 +97,29 @@ namespace MapSearchBank
             gMapControl1.Position = new GMap.NET.PointLatLng(53.9018722, 27.6574339);
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private async void button1_Click(object sender, EventArgs e)
         {
+            gMapControl1.Overlays.Clear();
+            foreach (var c in Program.banksSystem.Department)
+            { 
             //Создание маркера
-            GMapOverlay markersOverlay = new GMapOverlay("markers");
-            GMarkerGoogle marker = new GMarkerGoogle(new PointLatLng(53.899906, 27.562688), GMarkerGoogleType.green);
+            GMapOverlay markersOverlay = new GMapOverlay(c.Bank1.Id.ToString());
+            GMarkerGoogle marker = new GMarkerGoogle(new PointLatLng(c.Сoordinate_y, c.Сoordinate_x), GMarkerGoogleType.green);
             //Добавляем описание
             marker.ToolTip = new GMapRoundedToolTip(marker);
-            marker.ToolTipText = "Красная площадь";
+            foreach (var cur in Program.banksSystem.Сurrency.Join(Program.banksSystem.DeprtmentsСurrencies,
+            post => post.Id,
+            meta => meta.Id,
+            (post, meta) => new { Post = post.Name, Meta = meta.Sell }))
+            {
+                marker.ToolTipText = c.Bank1.Name + "\n" + c.Name + "\n" + c.Address + "\n" + c.Phone + "\n" + cur.Post + "  " +cur.Meta;
+            }
             //Добавляем на карту
             markersOverlay.Markers.Add(marker);
             gMapControl1.Overlays.Add(markersOverlay);
             //fix ставим на правильное место
-            gMapControl1.Position = new GMap.NET.PointLatLng(53.9018722, 27.6574339);
+            gMapControl1.Position = gMapControl1.Position;
+            }
         }
 
         private void buttonAddDepartment_Click(object sender, EventArgs e)
